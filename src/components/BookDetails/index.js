@@ -28,8 +28,7 @@ class BookDetails extends Component {
     const { match } = this.props;
     const { id } = match.params;
     const bookUrl = `https://api.itbook.store/1.0/books/${id}`;
-    console.log(bookUrl);
-
+    
     const response = await fetch(bookUrl);
     if (response.ok) {
       const jsonResponse = await response.json();
@@ -40,7 +39,7 @@ class BookDetails extends Component {
     } else if (response.status === 404) {
       this.setState({ apiStatus: apiStatusConstants.failure });
     }
-    console.log("fetched");
+
   };
 
   renderSuccessView() {

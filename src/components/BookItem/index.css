@@ -16,13 +16,13 @@
 }
 .book-title{
     font-size: 18px;
-    text-wrap: wrap;
+    /* text-wrap: wrap; */
     margin: 2px;
 
 }
 .book-subtitle{
     font-size: 15px;
-    text-wrap: wrap;
+    /* text-wrap: wrap; */
     margin: 2px;
 }
 .book-price{

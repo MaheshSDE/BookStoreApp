@@ -15,11 +15,12 @@ const Cart = () => (
       let total = 0
       if (!isCartEmpty) {
          cartList.map((eachCartItem) => {
-          return total += parseFloat(eachCartItem.price.slice(1))
+          return total += parseInt(eachCartItem.price.slice(1))
           }
         )
       }
       console.log(total)
+      console.log(cartList.length)
 
       return (
         <>
@@ -46,7 +47,11 @@ const Cart = () => (
                   <h1 className="cart-price">{`$${total}`}</h1>
                 </div>
                 <p className="order-text">(inclusive of all taxes)</p>
-                <button className="checkout-button">Checkout</button>
+                <Link to='/checkout'>
+                {isCartEmpty ? <button className="checkout-button" disabled>Checkout</button> : <button className="checkout-button">Checkout</button>}
+                
+                </Link>
+                
               </div>
             </div>
           </div>
