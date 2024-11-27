@@ -2,7 +2,7 @@ import {Component} from "react"
 import {Link} from "react-router-dom"
 
 import Header from "../Header"
-//import Carousel from '../Carousel'
+import Carousel from '../Carousel'
 
 import "./index.css"
 
@@ -18,12 +18,12 @@ class Home extends Component {
                         <h1 className="banner-heading">Book Store</h1>
                         <p className="banner-small-heading">LET'S MAKE THE BEST INVESTMENT</p>
                          
-                        {/*  <div className="carousel-container">
+                         <div className="carousel-container">
                             <Carousel/>
                          </div>
-                             */}
+                            
 
-                         <p className="banner-text">
+                         {/* <p className="banner-text">
                         Bookstore was founded in 1992 with a simple yet passionate
                         mission.To positively impact the world through the power of
                         reading and learning. Right from our first store in Mumbai to the
@@ -36,7 +36,7 @@ class Home extends Component {
                         nourish a love for the written word through a rich, handpicked
                         collection covering numerous topics. Our stores are thoughtfully
                         designed allowing you explore books whenever and wherever you are.
-                        </p>
+                        </p> */}
                         <Link to="/books" className="nav-link">
                             <button className="explore-button">Explore Books</button>
                         </Link>
