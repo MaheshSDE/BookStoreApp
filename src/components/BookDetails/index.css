@@ -25,7 +25,7 @@
   
   .book-details-heading {
     font-size: 24px;
-    text-wrap: wrap;
+    /* text-wrap: wrap; */
     font-weight: 500;
   }
   
@@ -54,7 +54,7 @@
   
   .book-details-price {
     font-size: 24px;
-    text-wrap: wrap;
+    /* text-wrap: wrap; */
     font-weight: 500;
   }
   
